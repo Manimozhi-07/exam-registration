@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXAM  REGISTRATION-admin login page</title>
+    <style>
+       #admin{
+           background-image: url("image/admin.jpg");
+           background-repeat: no-repeat;
+           background-size:cover;
+           background-position: center;
+           height:500px;
+       }
+       #btn{
+        margin-left:50px;
+       }
+       form{
+             
+             text-align: center;
+             padding:30px;
+             border:solid;
+             box-shadow: 10px 10px 10px 4px;
+             border-radius:10px;
+            
+         }
+         head{
+             text-align: center;
+             font-size: 30px;
+         }
+         @media(max-width:450px){
+            #login{
+           background-image: url("image/login.jpg");
+           background-repeat: no-repeat;
+           background-size:cover;
+           height:460px;
+            }
+        }
+       
+    </style>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+</head>
+<body id="admin">
+    <div class="container">
+        <form id="adminpage">
+            <h1 id="head">ADMIN LOGIN</h1>
+            <label for="adname">Name:</label>
+            <input type="text" id="adname">
+            <br>
+            <br>
+            <label for="admail">Mail:</label>
+            <input type="mail" id="admail">
+            <br>
+            <br>
+            <label for="adpwd">Password:</label>
+            <input type="password" id="adpwd">
+            <br>
+            <br>
+            <label for="admobno">Mobile Number:</label>
+            <input type="text" id="admobno">
+            <br>
+            <br>
+            <button type="submit" class="btn btn-success"><a href="index.html">BACK</a></button>
+            <button type="submit" class="btn btn-success" id="btn">VERIFY</button>
+        </form>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

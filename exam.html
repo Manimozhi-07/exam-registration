@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Registration</title>
+    <style> 
+       #exam{
+           background-image: url("image/exam.jpg");
+           background-repeat: no-repeat;
+           background-size:cover;
+           background-position: center;
+           height:500px;
+       }
+       form{
+          
+          padding:30px;
+          border:solid;
+          text-align: center;
+          box-shadow: 10px 10px 10px 4px;
+          border-radius:10px;
+       }
+       
+       #head{
+           font-size: 40px;
+       }  
+       label{
+           font-size: 20px;
+       }     
+    
+       
+       @media(max-width:450px){
+            #login{
+           background-image: url("image/login.jpg");
+           background-repeat: no-repeat;
+           background-size:cover;
+           height:460px;
+            }
+        }     
+          
+      </style>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+</head>
+<body id="exam">
+    <div class="container">
+       
+       
+    
+            <form id="exampage">
+                <h3 id="head">Exam Details</h3> <br><br>
+                <label for="examname">Exam Name:</label>
+                <input type="text" id="examname">
+                <br>
+                <br>
+    
+                <label for="examtype">Exam Type:</label>
+              
+                <input type="radio" value="online" name="option"> Online
+                <input type="radio" value="offline" name="option"> Offline
+                    
+                </select>
+
+                <br>
+                <br>
+                <br> 
+                
+                <label for="examcenter">Examcentre:</label>
+                <input type="radio" value="one" name="option"> Trichy
+                <input type="radio" value="two" name="option"> Madurai
+                <input type="radio" value="three" name="option"> Coimbatore
+            <br>
+                <input type="radio" value="four" name="option">  Chennai
+                <input type="radio" value="five" name="option"> Tuticorin
+                <input type="radio" value="six" name="option"> Tanjore
+            <br>
+            <br> 
+    
+                <label for="examdate">Date of Exam</label>
+                <input type="date" id="examdate">
+                <br>
+                <br>
+    
+                <label for="session">Exam session:</label>
+                <input type="radio" value="AM" name="option">AM
+                <input type="radio" value="PM" name="option">PM
+                <br>
+                <br>
+                <button type="submit" class="btn btn-success"><a href="index.html">BACK</a></button>
+                <button type="submit" class="btn btn-success" ><a href="payment.html">PAY FEES</a></button>
+            </form>
+            
+        </div> 
+        
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

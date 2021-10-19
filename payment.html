@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAYMENT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+           background-image: url("image/pay.jpg");
+           background-repeat: no-repeat;
+           background-size:1550px 800px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h3>PAYMENT DETAILS</h3>
+        <label for="fname">Accepted Cards</label>
+        <div class="icon-container">
+          <i class="fa fa-cc-visa" style="color:navy;"></i>
+          <i class="fa fa-cc-amex" style="color:blue;"></i>
+          <i class="fa fa-cc-mastercard" style="color:red;"></i>
+          <i class="fa fa-cc-discover" style="color:orange;"></i>
+        </div>
+        <label for="amt">Fee Amount:</label>
+        <input type="text" id="amt"><br><br>
+        <label for="mode">Payment Mode:</label>
+        <input type="radio" id="upi">UPI
+        <input type="radio" id="netbanking">Netbanking<br><br>
+    
+        
+        <label for="cname">Name on Card</label>
+        <input type="text" id="cname" name="cardname"><br><br>
+        <label for="ccnum">Credit card number</label>
+        <input type="text" id="ccnum" name="cardnumber"><br><br>
+        <label for="expmonth">Exp Month</label>
+        <input type="text" id="expmonth" name="expmonth"><br><br>
+        <label for="expyear">Exp Year</label>
+        <input type="text" id="expyear" name="expyear"><br>
+        <button type="submit" class="btn btn-success">SUBMIT</button> 
+
+    </form>
+</body>
+</html>
